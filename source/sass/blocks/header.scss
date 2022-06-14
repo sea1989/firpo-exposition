@@ -1,0 +1,27 @@
+.header {
+  width: 100%;
+  padding: 17px 0px 23px;
+
+  display: flex;
+  align-items: center;
+
+  background-color: $color-blue-dark;
+
+  color: $color-white;
+
+  border-bottom: 1px solid #272B6A;;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.user__link {
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+}

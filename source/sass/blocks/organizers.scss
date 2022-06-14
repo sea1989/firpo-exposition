@@ -1,0 +1,27 @@
+.organizers {
+  background-color: $color-blue-violet;
+
+  padding: 74px 0px;
+
+  & h2 {
+    margin-bottom: 33px;
+
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 47px;
+    text-transform: uppercase;
+
+    color: $color-white;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    background-color: $color-white;
+    color: $color-blue-dark;
+
+    padding: 32px 56px;
+  }
+}

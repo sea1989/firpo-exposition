@@ -1,0 +1,54 @@
+.map {
+  position: relative;
+
+  color: $color-blue-dark;
+
+  overflow: hidden;
+
+  &__info {
+    position: absolute;
+    top: 55px;
+    left: 5%;
+    background-color: $color-white;
+    padding: 40px;
+
+    & h2 {
+      font-weight: 800;
+      font-size: 28px;
+      line-height: 41px;
+      text-transform: uppercase;
+
+      margin-bottom: 20px;
+    }
+
+    & p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 29px;
+
+      margin-bottom: 18px;
+    }
+
+    & a {
+      color: $color-blue-medium;
+      padding-left: 4px;
+    }
+  }
+}
+
+.map__place {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+
+  margin-bottom: 12px;
+}
+
+.map__adress {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+
+  margin-bottom: 52px;
+}

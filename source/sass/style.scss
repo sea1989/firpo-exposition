@@ -1,0 +1,37 @@
+/* Base */
+
+$container-max-widths: (
+  dt: 1420px,
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+
+@import "./base/variables.scss";
+@import "./base/mixins.scss";
+@import "./base/reset.scss";
+@import "./base/fonts.scss";
+@import "./base/global.scss";
+@import "./base/visually-hidden.scss";
+
+
+/* Libs */
+@import "./libs/slick.scss";
+@import "./libs/slick-theme.scss";
+
+
+/* Blocks */
+@import "./blocks/body.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/header.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/info.scss";
+@import "./blocks/organizers.scss";
+@import "./blocks/events.scss";
+@import "./blocks/speakers.scss";
+@import "./blocks/moderators.scss";
+@import "./blocks/news.scss";
+@import "./blocks/history.scss";
+@import "./blocks/map.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/hidden.scss";
+@import "./blocks/modals.scss";

@@ -1,0 +1,28 @@
+.modals {
+  position: fixed;
+  right: -4000px;
+  z-index: 9;
+  width: 80%;
+  height: 100vh;
+  background-color: rgb(255 255 255 / 75%);
+  transition: all 0.5s ease;
+
+  &.active {
+    right: 0px;
+  }
+}
+
+.modals-content {
+  z-index: 9;
+  width: 100%;
+  height: 100vh;
+  background-color: $color-white;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.modals-menu {
+  padding: 23px 77px 32px;
+  background: #272b6a;
+}

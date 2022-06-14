@@ -1,0 +1,34 @@
+.speakers {
+  padding: 64px 0px;
+
+  background-color: $color-blue-violet;
+  color: $color-white;
+
+  position: relative;
+
+  & h2 {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 47px;
+    text-transform: uppercase;
+    margin-bottom: 54px;
+  }
+}
+
+.speakers__item {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  & p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.speakers__name {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 41px;
+}

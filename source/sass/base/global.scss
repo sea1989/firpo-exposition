@@ -1,0 +1,81 @@
+html {
+  box-sizing: border-box;
+  font-family: $font-circle;
+  scroll-behavior: smooth;
+
+  background-color: $color-blue-extra-light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.mbt-12 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  background: none;
+  color: white;
+
+  cursor: pointer;
+
+  border: none;
+}
+
+button span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+}
+
+.btn__standart {
+  background-color: $color-blue-light;
+  width: fit-content;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: $color-blue-dark;
+
+  padding: 15px 26px;
+
+  color: $color-black;
+}
+
+.noscroll {
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #20232a;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    opacity: 0.85;
+  }
+}
+
+.slider .slick-prev::before {
+  content: url("/img/left.svg");
+}

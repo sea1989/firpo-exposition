@@ -1,0 +1,39 @@
+footer {
+  background-color: $color-blue-dark;
+
+  padding-top: 50px;
+  color: $color-white;
+
+  & h2 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 21px;
+    padding-bottom: 18px;
+    margin-bottom: 32px;
+
+    border-bottom: 1px solid #323852;
+
+    color: #323852;
+  }
+
+  & li a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+
+    color: $color-white;
+  }
+}
+
+.for-user-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contacts-item {
+  display: flex;
+  grid-gap: 14px;
+
+  margin-bottom: 26px;
+}
