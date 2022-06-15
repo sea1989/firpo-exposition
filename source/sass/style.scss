@@ -13,11 +13,9 @@ $container-max-widths: (
 @import "./base/global.scss";
 @import "./base/visually-hidden.scss";
 
-
 /* Libs */
 @import "./libs/slick.scss";
 @import "./libs/slick-theme.scss";
-
 
 /* Blocks */
 @import "./blocks/body.scss";
@@ -37,3 +35,5 @@ $container-max-widths: (
 @import "./blocks/footer.scss";
 @import "./blocks/hidden.scss";
 @import "./blocks/modals.scss";
+@import "./blocks/modalAuth.scss";
+@import "./blocks/innerMenu.scss";

@@ -1,3 +1,8 @@
+.question-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .question-main {
   display: flex;
   flex-direction: column;

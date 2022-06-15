@@ -32,6 +32,7 @@
 
   &:hover .menu-top__submenu {
     opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -43,6 +44,7 @@
   width: 380px;
   transition: all 0.3s ease;
   opacity: 0;
+  visibility: hidden;
   background-color: $color-blue-violet;
 
   z-index: 1;
