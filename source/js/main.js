@@ -3,13 +3,13 @@ jQuery(document).ready(function ($) {
 
   $('.slider').slick({
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 4,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1542,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -18,7 +18,7 @@ jQuery(document).ready(function ($) {
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 960,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2

@@ -1,5 +1,5 @@
 .speakers {
-  padding: 64px 0px;
+  padding: 64px 0px 100px;
 
   background-color: $color-blue-violet;
   color: $color-white;
@@ -10,7 +10,7 @@
     content: "";
     background: url(/img/bg-lines.svg);
     position: absolute;
-    top: 170px;
+    top: 350px;
     left: 0px;
     bottom: 0px;
     right: 0px;
@@ -28,6 +28,8 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+
+  padding: 0 15px;
 
   & p {
     font-weight: 400;

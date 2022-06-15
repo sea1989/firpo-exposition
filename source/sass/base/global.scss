@@ -76,15 +76,55 @@ button span {
   }
 }
 
+// Стили для слайдера //
+
+.slider-wrapper {
+  padding: 0 75px;
+}
+
+.slider .slick-prev {
+  left: -75px;
+}
+
+.slider .slick-next {
+  right: -50px;
+}
+
 .slider .slick-prev::before {
   content: url("/img/left.svg");
 }
 
+.slider .slick-next::before {
+  content: url("/img/right.svg");
+}
+
+.slick-dots li {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+}
+
+.slick-dots li.slick-active {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: #6dbedf;
+}
+
+.slider .slick-dots {
+  bottom: -76px;
+}
+
+.slick-dots li button:before {
+  display: none;
+}
+
 .title-wrapper {
   display: flex;
+  align-items: center;
   justify-content: center;
-  text-align: center;
-  gap: 3px;
+  margin-bottom: 54px;
 }
 
 .title-number {
