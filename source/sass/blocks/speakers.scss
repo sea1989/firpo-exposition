@@ -6,6 +6,16 @@
 
   position: relative;
 
+  &::before {
+    content: "";
+    background: url(/img/bg-lines.svg);
+    position: absolute;
+    top: 170px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+  }
+
   & h2 {
     font-weight: 800;
     font-size: 32px;
