@@ -152,7 +152,7 @@
                 <div class="field col-lg-4">
                   <label for="Email">
                     Email *
-                  </label><input class="input-auth" type="email" id="Email" placeholder="Фамилия" name="Email" value=""
+                  </label><input class="input-auth" type="email" id="Email" placeholder="Email" name="Email" value=""
                     autocomplete="nope" required>
                 </div>
 
@@ -236,36 +236,77 @@
               </div>
             </fieldset>
 
+            <fieldset>
+              <div class="row">
+                <div class="field col-lg-4">
+                  <label for="work">
+                    Место работы *
+                  </label><input class="input-auth" type="text" id="work" placeholder="Место работы" name="work"
+                    value="" autocomplete="nope" required>
+                </div>
+
+                <div class="field col-lg-4">
+                  <label for="type-firm">
+                    Тип организации *
+                  </label>
+                  <select class="input-auth" id="type-firm" name="type-firm" value="" required>
+                    <option>-- выберите --</option>
+                    <option>участник</option>
+                    <option>гость</option>
+                  </select>
+                </div>
+
+                <div class="field col-lg-4">
+                  <label for="vacation">
+                    Должность
+                  </label><input class="input-auth" type="text" id="vacation" placeholder="Должность" name="vacation"
+                    value="" autocomplete="nope">
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <div class="row">
+
+                <div class="field col-lg-4">
+                  <label for="theme-session">
+                    Тематика сессии *
+                  </label>
+                  <select class="input-auth" id="theme-session" name="theme-session" value="" required>
+                    <option>-- выберите --</option>
+                    <option>участник</option>
+                    <option>гость</option>
+                  </select>
+                </div>
+
+                <div class="field col-lg-8">
+                  <label for="theme-performance">
+                    Тема выступления
+                  </label><input class="input-auth" type="text" id="theme-performance" placeholder="Тема выступления"
+                    name="theme-performance" value="" autocomplete="nope">
+                </div>
+              </div>
+            </fieldset>
+            <input type="submit" class="button-auth col-lg-3" value="Отправить">
           </form>
         </div>
 
         <div class="inner-menu">
           <ul class="modals-menu__list">
             <li class="modals-menu__item">
-              <a href="#">УЧАСТНИКУ</a>
+              <a href="#">Подать заявку на участие</a>
             </li>
             <li class="modals-menu__item">
-              <a href="#">НОВОСТИ</a>
+              <a href="#">Мой профиль</a>
             </li>
             <li class="modals-menu__item">
-              <a href="#">ТРАНСЛЯЦИИ</a>
+              <a href="#">Заявление для ФСО</a>
             </li>
             <li class="modals-menu__item">
-              <a href="#">ВИДЕОКОНФЕРЕНЦИИ</a>
+              <a href="#">Сменить пароль</a>
             </li>
             <li class="modals-menu__item">
-              <a href="#">ГАЛЕРЕЯ</a>
-
-            </li>
-            <li class="modals-menu__item">
-              <a href="#">ВОПРОС — ОТВЕТ</a>
-
-            </li>
-            <li class="modals-menu__item">
-              <a href="#">ВИРТУАЛЬНАЯ ВЫСТАВКА</a>
-            </li>
-            <li class="modals-menu__item">
-              <a href="#">КОНТАКТЫ</a>
+              <a href="#">Выход</a>
             </li>
           </ul>
         </div>
