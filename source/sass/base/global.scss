@@ -63,7 +63,8 @@ button span {
   color: $color-black;
 }
 
-.noscroll {
+.noscroll,
+.noscroll2 {
   overflow: hidden;
   &::before {
     content: "";

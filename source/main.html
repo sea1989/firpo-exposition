@@ -73,7 +73,7 @@
         </nav>
 
         <div class="user">
-          <a class="user__link">
+          <a href="#" class="user__link">
             <img src="img/user.svg" width="22" height="22" alt="logo1">
             <span>Личный кабинет</span>
             <div class="menu-top__submenu">
@@ -844,7 +844,58 @@
   </div>
 
   <section class='modal-auth modal-form'>
-    <h2> Сайт находится в разработке</h2>
+
+    <div class="tabs">
+
+      <div id="tab2" class="tab">
+        <ul class="nav-tabs">
+          <li class="active"><a href="#tab1"> Регистрация</a></li>
+          <li><a href="#tab2">Вход</a></li>
+        </ul>
+
+        <form>
+
+          <fieldset>
+
+            <input class="input-auth" type="text" id="email" placeholder="Ваш Email" name="AUTH_USER" value=""
+              autofocus="" autocomplete="nope" required>
+
+            <input class="input-auth" type="password" id="pswd" placeholder="Пароль" required>
+
+            <input type="submit" class="button-auth" value="Войти на сайт">
+            <em>*
+              Нажимая на кнопку вы даёте свое согласие<br>на обработку персональных данных
+            </em>
+          </fieldset>
+
+        </form>
+      </div>
+
+      <div id="tab1" class="tab">
+        <ul class="nav-tabs">
+          <li><a href="#tab1">Регистрация</a></li>
+          <li class="active"><a href="#tab2"> Вход</a></li>
+        </ul>
+
+        <form>
+
+          <fieldset>
+
+            <input class="input-auth" type="text" id="email" placeholder="Ваш Email" name="AUTH_USER" value=""
+              autofocus="" autocomplete="nope" required>
+
+            <input class="input-auth" type="password" id="pswd" placeholder="Пароль" required>
+            <input class="input-auth" type="password" id="pswd2" placeholder="Повторите пароль" required>
+
+            <input type="submit" class="button-auth" value="Зарегистрироваться">
+            <em>*
+              Нажимая на кнопку вы даёте свое согласие<br>на обработку персональных данных
+            </em>
+          </fieldset>
+
+        </form>
+      </div>
+    </div>
   </section>
 
   <script src="./js/jquery.min.js"></script>

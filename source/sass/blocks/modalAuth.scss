@@ -2,7 +2,7 @@
   display: none;
   box-sizing: border-box;
   position: fixed;
-  width: 490px;
+  max-width: 360px;
   padding: 28px 40px;
   background-color: white;
   box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
@@ -10,11 +10,91 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
+
+  &.active {
+    display: block;
+  }
 }
 
-.modal-auth h2 {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 50px;
-  line-height: 100%;
+.nav-tabs {
+  display: flex;
+  margin-bottom: 28px;
+
+  & li {
+    padding: 20px 33px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+
+    & a {
+      color: $color-blue-dark;
+    }
+
+    &.active {
+      background-color: $color-blue-extra-light;
+
+      & a {
+        color: #0966a0;
+      }
+    }
+  }
+}
+
+.tab:not(:target) {
+  display: none;
+}
+
+.tab:last-child {
+  display: block;
+}
+
+.tab:target ~ .tab:last-child {
+  display: none;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+
+  & fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    & em {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      font-style: italic;
+      color: #7c8388;
+    }
+  }
+}
+
+.input-auth {
+  width: 100%;
+  background: $color-white;
+  border: 1px solid #eaf2f6;
+
+  padding: 18px;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    color: #7c8388;
+  }
+}
+
+.button-auth {
+  background-color: $color-blue-light;
+  color: $color-blue-dark;
+  padding: 18px;
+  border: none;
+
+  cursor: pointer;
 }

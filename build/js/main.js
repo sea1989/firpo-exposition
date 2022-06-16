@@ -72,12 +72,27 @@ jQuery(document).ready(function ($) {
     return false;
   });
 
+  $(".user").click(function () {
+    $(".modal-auth").addClass("active");
+    $(".body").addClass("noscroll2");
+    return false;
+  });
+
   $(document).click(function (e) { // событие клика по веб-документу
     var div = $(".modals"); // тут указываем ID элемента
     if (!div.is(e.target) // если клик был не по нашему блоку
       && div.has(e.target).length === 0) { // и не по его дочерним элементам
       $(".modals").removeClass("active");
       $(".body").removeClass("noscroll");
+    }
+  });
+
+  $(document).click(function (e) { // событие клика по веб-документу
+    var div = $(".modal-auth"); // тут указываем ID элемента
+    if (!div.is(e.target) // если клик был не по нашему блоку
+      && div.has(e.target).length === 0) { // и не по его дочерним элементам
+      $(".modal-auth").removeClass("active");
+      $(".body").removeClass("noscroll2");
     }
   });
 

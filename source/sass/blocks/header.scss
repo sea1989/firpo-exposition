@@ -35,4 +35,10 @@
   padding: 10px 0px;
 
   gap: 5px;
+
+  color: $color-white;
+
+  &:hover {
+    color: $color-blue-light;
+  }
 }
