@@ -2,13 +2,15 @@
   background: #272b6a;
   padding-top: 23px;
 
+  min-width: 320px;
+
   & a {
     display: block;
     font-weight: 400;
     font-size: 18px;
     line-height: 60px;
 
-    padding: 0px 77px 0px 32px;
+    padding: 0px 32px 0px 32px;
 
     color: $color-white;
   }
@@ -18,7 +20,7 @@
     font-size: 18px;
     line-height: 60px;
 
-    padding: 0px 77px 0px 32px;
+    padding: 0px 32px 0px 32px;
 
     background-color: $color-white;
 
