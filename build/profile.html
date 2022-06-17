@@ -115,171 +115,86 @@
 
   </header>
 
-  <section class="application">
+  <section class="profile">
     <div class="container">
 
-      <div class="application-wrapper">
-        <div class="application-main">
-          <h2> Заявка на участие</h2>
-          <form>
-            <fieldset>
-              <div class="row">
-                <div class="field col-lg-4">
-                  <label for="surname">
-                    Ваша фамилия *
-                  </label><input class="input-auth" type="text" id="surname" placeholder="Фамилия" name="surname" value="" autofocus="" autocomplete="nope" required="">
-                </div>
+      <div class="profile-wrapper">
+        <div class="profile-main">
+          <h2> Мой профиль</h2>
 
-                <div class="field col-lg-4">
-                  <label for="name">
-                    Ваше имя *
-                  </label><input class="input-auth" type="text" id="name" placeholder="Имя" name="name" value="" required="">
-                </div>
+          <div class="profile-main-wrapper">
 
-                <div class="field col-lg-4">
-                  <label for="patronymic">
-                    Ваше Отчество *
-                  </label><input class="input-auth" type="text" id="patronymic" placeholder="Отчество" name="patronymic" value="" required="">
+            <form>
+              <fieldset>
+                <div class="row">
+                  <div class="field col-lg-6">
+                    <label for="surname">
+                      Ваша фамилия *
+                    </label><input class="input-auth" type="text" id="surname" placeholder="Фамилия" name="surname" value="" autofocus="" autocomplete="nope" required="">
+                  </div>
+
+                  <div class="field col-lg-6">
+                    <label for="Email">
+                      Email *
+                    </label><input class="input-auth" type="email" id="Email" placeholder="Email" name="Email" value="" autocomplete="nope" required="">
+                  </div>
+
                 </div>
+              </fieldset>
+
+              <fieldset>
+                <div class="row">
+                  <div class="field col-lg-6">
+                    <label for="region">
+                      Ваш регион *
+                    </label>
+                    <select class="input-auth" id="region" name="region" value="" required="">
+                      <option>-- выберите --</option>
+                      <option>Центральный</option>
+                      <option>Южный</option>
+                    </select>
+                  </div>
+
+                  <div class="field col-lg-6">
+                    <label for="city">
+                      Ваш город *
+                    </label>
+                    <select class="input-auth" id="city" name="city" value="" required="">
+                      <option>-- выберите --</option>
+                      <option>Москва</option>
+                      <option>Саратов</option>
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <div class="row">
+                  <div class="field col-lg-6">
+                    <label for="work">
+                      Место работы *
+                    </label><input class="input-auth" type="text" id="work" placeholder="Место работы" name="work" value="" autocomplete="nope" required="">
+                  </div>
+
+                  <div class="field col-lg-6">
+                    <label for="vacation">
+                      Должность
+                    </label><input class="input-auth" type="text" id="vacation" placeholder="Должность" name="vacation" value="" autocomplete="nope">
+                  </div>
+                </div>
+              </fieldset>
+
+              <input type="submit" class="button-auth col-lg-3" value="Сохранить">
+            </form>
+
+            <div class="image-upload">
+              <div class="user-ava">
+                <span>изменить</span>
               </div>
-            </fieldset>
+            </div>
 
-            <fieldset>
-              <div class="row">
-                <div class="field col-lg-4">
-                  <label for="Email">
-                    Email *
-                  </label><input class="input-auth" type="email" id="Email" placeholder="Email" name="Email" value="" autocomplete="nope" required="">
-                </div>
+          </div>
 
-                <div class="field col-lg-4">
-                  <label for="tel">
-                    Телефон *
-                  </label><input class="input-auth" type="tel" id="tel" placeholder="+7(___)___-__-__" name="tel" value="" autocomplete="nope" required="">
-                </div>
-
-                <div class="field col-lg-4">
-                  <label for="social">
-                    Ссылка на социальную сеть
-                  </label><input class="input-auth" type="text" id="social" placeholder="vk.com, ok.ru, telegram" name="social" value="" autocomplete="nope">
-                </div>
-              </div>
-            </fieldset>
-
-            <fieldset>
-              <div class="row">
-                <div class="field col-lg-4">
-                  <label for="format">
-                    Формат участия *
-                  </label>
-                  <select class="input-auth" id="format" name="format" value="" required="">
-                    <option>-- выберите --</option>
-                    <option>очный</option>
-                    <option>заочный</option>
-                  </select>
-                </div>
-
-                <div class="field col-lg-4">
-                  <label for="category">
-                    Категория участника *
-                  </label>
-                  <select class="input-auth" id="category" name="category" value="" required="">
-                    <option>-- выберите --</option>
-                    <option>участник</option>
-                    <option>гость</option>
-                  </select>
-                </div>
-              </div>
-            </fieldset>
-
-            <fieldset>
-              <div class="row">
-                <div class="field col-lg-4">
-                  <label for="country">
-                    Страна *
-                  </label>
-                  <select class="input-auth" id="country" name="country" value="" required="">
-                    <option>-- выберите --</option>
-                    <option>РФ</option>
-                    <option>Беларусь</option>
-                  </select>
-                </div>
-
-                <div class="field col-lg-4">
-                  <label for="region">
-                    Регион РФ *
-                  </label>
-                  <select class="input-auth" id="region" name="region" value="" required="">
-                    <option>-- выберите --</option>
-                    <option>Центральный</option>
-                    <option>Южный</option>
-                  </select>
-                </div>
-
-                <div class="field col-lg-4">
-                  <label for="city">
-                    Город *
-                  </label>
-                  <select class="input-auth" id="city" name="city" value="" required="">
-                    <option>-- выберите --</option>
-                    <option>Москва</option>
-                    <option>Саратов</option>
-                  </select>
-                </div>
-
-              </div>
-            </fieldset>
-
-            <fieldset>
-              <div class="row">
-                <div class="field col-lg-4">
-                  <label for="work">
-                    Место работы *
-                  </label><input class="input-auth" type="text" id="work" placeholder="Место работы" name="work" value="" autocomplete="nope" required="">
-                </div>
-
-                <div class="field col-lg-4">
-                  <label for="type-firm">
-                    Тип организации *
-                  </label>
-                  <select class="input-auth" id="type-firm" name="type-firm" value="" required="">
-                    <option>-- выберите --</option>
-                    <option>участник</option>
-                    <option>гость</option>
-                  </select>
-                </div>
-
-                <div class="field col-lg-4">
-                  <label for="vacation">
-                    Должность
-                  </label><input class="input-auth" type="text" id="vacation" placeholder="Должность" name="vacation" value="" autocomplete="nope">
-                </div>
-              </div>
-            </fieldset>
-
-            <fieldset>
-              <div class="row">
-
-                <div class="field col-lg-4">
-                  <label for="theme-session">
-                    Тематика сессии *
-                  </label>
-                  <select class="input-auth" id="theme-session" name="theme-session" value="" required="">
-                    <option>-- выберите --</option>
-                    <option>участник</option>
-                    <option>гость</option>
-                  </select>
-                </div>
-
-                <div class="field col-lg-8">
-                  <label for="theme-performance">
-                    Тема выступления
-                  </label><input class="input-auth" type="text" id="theme-performance" placeholder="Тема выступления" name="theme-performance" value="" autocomplete="nope">
-                </div>
-              </div>
-            </fieldset>
-            <input type="submit" class="button-auth col-lg-3" value="Отправить">
-          </form>
         </div>
 
         <div class="inner-menu">
@@ -303,7 +218,6 @@
         </div>
 
       </div>
-
 
     </div>
   </section>

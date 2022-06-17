@@ -1,9 +1,9 @@
-.application-wrapper {
+.profile-wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.application-main {
+.profile-main {
   width: 100%;
 
   display: flex;
@@ -28,12 +28,51 @@
 
   & fieldset {
     padding: 28px 0;
-    border-bottom: 1px solid #eaf2f6;
+  }
+}
+
+.profile-main-wrapper {
+  display: flex;
+  gap: 70px;
+
+  & form {
+    width: 100%;
+  }
+}
+
+.user-ava {
+  display: flex;
+  align-items: center;
+
+  width: 241px;
+  height: 241px;
+  border-radius: 50%;
+  background: $color-blue-light;
+
+  margin-top: 50px;
+
+  border: 17px solid #eff5f8;
+
+  & span {
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    color: $color-white;
+  }
+}
+
+@media (max-width: $width-desktop) {
+  .profile-main-wrapper {
+    flex-direction: column-reverse;
   }
 }
 
 @media (max-width: $width-tablet) {
-  .application-wrapper {
+  .profile-wrapper {
     flex-direction: column-reverse;
   }
 }
