@@ -20,8 +20,19 @@
 
   padding: 10px 0px;
 
+  & svg {
+    margin-left: 10px;
+  }
+
   &:hover {
     color: $color-blue-light;
+
+    & svg {
+      fill: $color-blue-light;
+      transform: rotateX(180deg);
+
+      transition: all 1s ease;
+    }
   }
 }
 

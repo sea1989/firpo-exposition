@@ -35,9 +35,11 @@ $container-max-widths: (
 @import "./blocks/application.scss";
 @import "./blocks/profile.scss";
 @import "./blocks/newsPage.scss";
+@import "./blocks/newsDetails.scss";
 
 @import "./blocks/footer.scss";
 @import "./blocks/hidden.scss";
 @import "./blocks/modals.scss";
 @import "./blocks/modalAuth.scss";
 @import "./blocks/innerMenu.scss";
+@import "./blocks/modalSearch.scss";

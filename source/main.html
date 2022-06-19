@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
   <title>
     XVI Международный Конгресс-выставка
     «Молодые профессионалы.
@@ -38,7 +38,12 @@
         <nav class="main__nav">
           <ul class="main__nav--list">
             <li class="main__nav--item">
-              <a href="#" class="header__nav--link">Участнику</a>
+              <a href="#" class="header__nav--link">Участнику
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#fff" class="bi bi-chevron-down"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                </svg></a>
 
               <div class="menu-top__submenu">
                 <ul class="menu-top__subitems">
@@ -79,7 +84,7 @@
         </nav>
 
         <div class="user">
-          <a href="#" class="user__link">
+          <div class="user__link">
             <img src="img/user.svg" width="22" height="22" alt="logo1">
             <span>Личный кабинет</span>
             <div class="menu-top__submenu">
@@ -100,7 +105,7 @@
 
               </ul>
             </div>
-          </a>
+          </div>
         </div>
         <button class="header__btn-search js-search" type="button" title="Поиск">
           <img src="img/search.svg" width="22" height="22" alt="logo1">
@@ -317,67 +322,60 @@
 
       <div class="row">
         <div class="col-md-6 g-4">
-          <div class="events__item">
-
+          <a href="#" class="events__item">
             <div class="events__top">
               <span class="events__time">09:00–18:00</span> <span class="events__place">Выставочный зал</span>
             </div>
             <p>Лаборатория СПО в сфере педагогического образования</p>
-          </div>
+          </a>
         </div>
 
         <div class="col-md-6 g-4">
-          <div class="events__item">
-
-            <div class="events__top">
-              <span class="events__time">09:00–18:00</span> <span class="events__place">Выставочный зал</span>
-            </div>
-            <p>Лаборатория СПО в сфере природообустройства, геодезии и геологии</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 g-4">
-          <div class="events__item">
-
+          <a href="#" class="events__item">
             <div class="events__top">
               <span class="events__time">09:00–18:00</span> <span class="events__place">Выставочный зал</span>
             </div>
             <p>Лаборатория СПО в сфере педагогического образования</p>
-          </div>
+          </a>
         </div>
 
         <div class="col-md-6 g-4">
-          <div class="events__item">
-
-            <div class="events__top">
-              <span class="events__time">09:00–18:00</span> <span class="events__place">Выставочный зал</span>
-            </div>
-            <p>Лаборатория СПО в сфере природообустройства, геодезии и геологии</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 g-4">
-          <div class="events__item">
-
+          <a href="#" class="events__item">
             <div class="events__top">
               <span class="events__time">09:00–18:00</span> <span class="events__place">Выставочный зал</span>
             </div>
             <p>Лаборатория СПО в сфере педагогического образования</p>
-          </div>
+          </a>
         </div>
 
         <div class="col-md-6 g-4">
-          <div class="events__item">
-
+          <a href="#" class="events__item">
             <div class="events__top">
               <span class="events__time">09:00–18:00</span> <span class="events__place">Выставочный зал</span>
             </div>
-            <p>Лаборатория СПО в сфере природообустройства, геодезии и геологии</p>
-          </div>
+            <p>Лаборатория СПО в сфере педагогического образования</p>
+          </a>
         </div>
+
+        <div class="col-md-6 g-4">
+          <a href="#" class="events__item">
+            <div class="events__top">
+              <span class="events__time">09:00–18:00</span> <span class="events__place">Выставочный зал</span>
+            </div>
+            <p>Лаборатория СПО в сфере педагогического образования</p>
+          </a>
+        </div>
+
+        <div class="col-md-6 g-4">
+          <a href="#" class="events__item">
+            <div class="events__top">
+              <span class="events__time">09:00–18:00</span> <span class="events__place">Выставочный зал</span>
+            </div>
+            <p>Лаборатория СПО в сфере педагогического образования</p>
+          </a>
+        </div>
+
       </div>
-
-    </div>
 
   </section>
 
@@ -462,8 +460,10 @@
 
   <section class="moderators">
     <div class="container">
+      <div class="title-wrapper">
+        <h2>Модераторы</h2> <span class="title-number">18</span>
+      </div>
 
-      <h2>Модераторы</h2>
       <div class="slider-wrapper">
         <div class="slider">
 
@@ -539,69 +539,90 @@
 
   <section class="news">
     <div class="container">
-      <h2>Новости</h2>
+      <div class="news-title-wrapper">
+        <h2>Новости</h2>
+        <a href="#">все новости <img src="img/btn-all.svg" alt="btn-news"> </a>
+      </div>
+
       <div class="row  justify-content-center">
         <div class="col-md-6 col-lg-4 mbt-12">
-          <div class="news__item">
-            <img src="img/news1.jpg" alt="moderators">
+          <a href="#" class="news__item">
+            <div class="img-wrapper">
+              <img src="img/news1.jpg" alt="moderators">
+            </div>
             <span>12 июня 2022</span>
             <p>
               В Москве 12 декабря открылся Международный конгресс-выставка «Молодые профессионалы: кадровый потенциал
               экономики»
             </p>
-          </div>
+          </a>
         </div>
 
         <div class="col-md-6 col-lg-4 mbt-12">
-          <div class="news__item">
-            <img src="img/news2.jpg" alt="moderators">
+          <a href="#" class="news__item">
+            <div class="img-wrapper">
+              <img src="img/news2.jpg" alt="moderators">
+            </div>
             <span>12 июня 2022</span>
             <p>
               В Москве 12 декабря открылся Международный конгресс-выставка «Молодые профессионалы: кадровый потенциал
               экономики»
             </p>
-          </div>
+          </a>
         </div>
 
         <div class="col-md-6 col-lg-4 mbt-12">
-          <div class="news__item">
-            <img src="img/news3.jpg" alt="moderators">
+          <a href="#" class="news__item">
+            <div class="img-wrapper">
+              <img src="img/news3.jpg" alt="moderators">
+            </div>
             <span>12 июня 2022</span>
             <p>
               В Москве 12 декабря открылся Международный конгресс-выставка «Молодые профессионалы: кадровый потенциал
               экономики»
             </p>
-          </div>
+          </a>
         </div>
+
       </div>
     </div>
   </section>
 
   <section class="history">
     <div class="container">
-      <h2>Как это было</h2>
+
+      <div class="history-title-wrapper">
+        <h2>Как это было</h2>
+
+        <div class="history-title-years">
+          <span class="history-year--active">2021</span>
+          <span>2020</span>
+        </div>
+        <a href="#">вся галерея<img src="img/btn-all.svg" alt="btn-news"> </a>
+      </div>
+
       <div class="slider-wrapper">
         <div class="slider2">
 
-          <div class="slide2">
+          <div class="slide">
             <div class="history__item">
               <img src="img/history1.jpg" alt="history1">
             </div>
           </div>
 
-          <div class="slide2">
+          <div class="slide">
             <div class="history__item">
               <img src="img/history2.jpg" alt="history1">
             </div>
           </div>
 
-          <div class="slide2">
+          <div class="slide">
             <div class="history__item">
               <img src="img/history3.jpg" alt="history1">
             </div>
           </div>
 
-          <div class="slide2">
+          <div class="slide">
             <div class="history__item">
               <img src="img/history3.jpg" alt="history1">
             </div>
@@ -707,21 +728,32 @@
                 <span>Олимпийский просп., 1</span>
               </li>
               <li class="contacts-item">
-                <img src="img/user.svg" width="22" height="22" alt="logo1">
+                <img src="img/tel.svg" width="22" height="22" alt="logo1">
                 <p>
-                  Телефон<a href="tel:8 800 999 11 21">8 800 999 11 21</a>
+                  Телефон: <a href="tel:8 800 999 11 21">8 800 999 11 21</a>
                 </p>
               </li>
               <li class="contacts-item">
-                <img src="img/user.svg" width="22" height="22" alt="logo1">
+                <img src="img/mail.svg" width="22" height="22" alt="logo1">
                 <p>
-                  Почта<a href="mailto:info@tvet-congress.ru">info@tvet-congress.ru</a>
+                  Почта: <a href="mailto:info@tvet-congress.ru">info@tvet-congress.ru</a>
                 </p>
               </li>
             </ul>
 
           </div>
 
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bootom-wrapper">
+          <p>
+            © 2021–2022, Институт развития профессионального образования
+          </p>
+
+          <a href="">Политика конфидициальности</a>
         </div>
       </div>
     </div>
@@ -732,6 +764,12 @@
 
       <div class="modals-menu">
         <div class="container">
+          <div class="modals-close">
+
+            <img src="img/close-modals.svg" width="22" height="22" alt="logo1">
+            <span>Меню</span>
+
+          </div>
           <div class="row">
             <div class="col-lg-5">
               <h2>Участнику</h2>
@@ -798,19 +836,19 @@
               <div class="for-user-wrapper">
                 <ul class="for-user-list">
                   <li class="contacts-item">
-                    <img src="img/point.svg" width="22" height="22" alt="logo1">
+                    <img src="img/menu-point.svg" width="22" height="22" alt="point">
                     <span>Олимпийский просп., 1</span>
                   </li>
                   <li class="contacts-item">
-                    <img src="img/user.svg" width="22" height="22" alt="logo1">
+                    <img src="img/menu-tel.svg" width="22" height="22" alt="tel">
                     <p>
-                      Телефон<a href="tel:8 800 999 11 21">8 800 999 11 21</a>
+                      Телефон: <a href="tel:8 800 999 11 21">8 800 999 11 21</a>
                     </p>
                   </li>
                   <li class="contacts-item">
-                    <img src="img/user.svg" width="22" height="22" alt="logo1">
+                    <img src="img/menu-mail.svg" width="22" height="22" alt="mail">
                     <p>
-                      Почта<a href="mailto:info@tvet-congress.ru">info@tvet-congress.ru</a>
+                      Почта: <a href="mailto:info@tvet-congress.ru">info@tvet-congress.ru</a>
                     </p>
                   </li>
                 </ul>
@@ -826,7 +864,9 @@
   </div>
 
   <section class='modal-auth modal-form'>
-
+    <div class="modal-auth-close">
+      <img src="img/close-modals.svg" width="22" height="22" alt="close">
+    </div>
     <div class="tabs">
 
       <div id="tab2" class="tab">
@@ -880,8 +920,20 @@
     </div>
   </section>
 
+  <div class="modal-search">
+    <div class="container">
+      <form action="/search/" id="search-form">
+        <input type="search">
+        <button type="submit">
+
+        </button>
+      </form>
+    </div>
+  </div>
+
   <script src="./js/jquery.min.js"></script>
   <script src="./js/slick.min.js"></script>
+  <script src="./js/jquery.maskedinput.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 

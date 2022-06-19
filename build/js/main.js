@@ -66,17 +66,48 @@ jQuery(document).ready(function ($) {
     ]
   });
 
+  $('.slider3').slick({
+    dots: true
+  });
+
   $(".header__btn-menu").click(function () {
     $(".modals").addClass("active");
     $(".body").addClass("noscroll");
     return false;
   });
 
+  $(".modals-close").click(function () {
+    $(".modals").removeClass("active");
+    $(".body").removeClass("noscroll");
+    return false;
+  });
+
+
   $(".user").click(function () {
     $(".modal-auth").addClass("active");
     $(".body").addClass("noscroll2");
     return false;
   });
+
+  $(".modal-auth-close").click(function () {
+    $(".modal-auth").removeClass("active");
+    $(".body").removeClass("noscroll2");
+    return false;
+  });
+
+  $(".header__btn-search").click(function () {
+    $(".modal-search").addClass("active");
+    return false;
+  });
+
+  $(document).click(function (e) { // событие клика по веб-документу
+    var div = $(".modal-search"); // тут указываем ID элемента
+    if (!div.is(e.target) // если клик был не по нашему блоку
+      && div.has(e.target).length === 0) { // и не по его дочерним элементам
+      $(".modal-search").removeClass("active");
+    }
+  });
+
 
   $(document).click(function (e) { // событие клика по веб-документу
     var div = $(".modals"); // тут указываем ID элемента
@@ -95,5 +126,21 @@ jQuery(document).ready(function ($) {
       $(".body").removeClass("noscroll2");
     }
   });
+
+  $.fn.setCursorPosition = function (pos) {
+    if ($(this).get(0).setSelectionRange) {
+      $(this).get(0).setSelectionRange(pos, pos);
+    } else if ($(this).get(0).createTextRange) {
+      var range = $(this).get(0).createTextRange();
+      range.collapse(true);
+      range.moveEnd('character', pos);
+      range.moveStart('character', pos);
+      range.select();
+    }
+  };
+  $.mask.definitions['N'] = '[/0-6|9/]';
+  $('input[type="tel"]').click(function () {
+    $(this).setCursorPosition(3);
+  }).mask("+7(N99) 999-99-99");
 
 });

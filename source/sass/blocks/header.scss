@@ -40,5 +40,14 @@
 
   &:hover {
     color: $color-blue-light;
+    cursor: pointer;
+  }
+}
+
+
+@media (max-width: $width-tablet) {
+  .header__btn-search span,
+  .header__btn-menu span {
+    display: none;
   }
 }

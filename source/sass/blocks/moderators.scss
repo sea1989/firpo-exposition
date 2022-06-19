@@ -21,7 +21,10 @@
     font-size: 32px;
     line-height: 47px;
     text-transform: uppercase;
-    margin-bottom: 54px;
+  }
+
+  & .container {
+    max-width: 1570px;
   }
 }
 
@@ -31,6 +34,10 @@
   gap: 32px;
 
   padding: 0 15px;
+
+  & img {
+    max-width: 260px;
+  }
 
   & p {
     font-weight: 400;

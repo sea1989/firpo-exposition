@@ -28,6 +28,15 @@
 
   & fieldset {
     padding: 28px 0;
+
+    & span {
+      color: red;
+    }
+  }
+
+  & input,
+  & select {
+    margin-top: 6px;
   }
 }
 

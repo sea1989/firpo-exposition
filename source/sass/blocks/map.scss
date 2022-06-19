@@ -52,3 +52,9 @@
 
   margin-bottom: 52px;
 }
+
+@media (max-width: $width-tablet) {
+  .map__info {
+    position: static;
+  }
+}

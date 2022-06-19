@@ -29,6 +29,19 @@
   & fieldset {
     padding: 28px 0;
     border-bottom: 1px solid #eaf2f6;
+
+    & span {
+      color: red;
+    }
+
+    &.fieldset-last {
+      border: none;
+    }
+  }
+
+  & input,
+  & select {
+    margin-top: 6px;
   }
 }
 

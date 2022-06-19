@@ -16,6 +16,10 @@ footer {
     color: #323852;
   }
 
+  & a:hover {
+    color: #6DBEDF;
+  }
+
   & li a {
     font-weight: 400;
     font-size: 16px;
@@ -36,4 +40,31 @@ footer {
   grid-gap: 14px;
 
   margin-bottom: 26px;
+
+  align-items: center;
+
+  & a {
+    color: #6DBEDF;
+  }
+}
+
+.footer-bottom {
+  border-top: 1px solid #323852;
+}
+
+.footer-bootom-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 18px 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #545973;
+
+  & a {
+    color: #545973;
+  }
 }

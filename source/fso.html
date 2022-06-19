@@ -38,7 +38,12 @@
         <nav class="main__nav">
           <ul class="main__nav--list">
             <li class="main__nav--item">
-              <a href="#" class="header__nav--link">Участнику</a>
+              <a href="#" class="header__nav--link">Участнику
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#fff" class="bi bi-chevron-down"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                </svg></a>
 
               <div class="menu-top__submenu">
                 <ul class="menu-top__subitems">
@@ -79,7 +84,7 @@
         </nav>
 
         <div class="user">
-          <a href="#" class="user__link">
+          <div class="user__link">
             <img src="img/user.svg" width="22" height="22" alt="logo1">
             <span>Личный кабинет</span>
             <div class="menu-top__submenu">
@@ -100,7 +105,7 @@
 
               </ul>
             </div>
-          </a>
+          </div>
         </div>
         <button class="header__btn-search js-search" type="button" title="Поиск">
           <img src="img/search.svg" width="22" height="22" alt="logo1">
@@ -115,6 +120,7 @@
 
   </header>
 
+
   <section class="profile">
     <div class="container">
 
@@ -127,14 +133,14 @@
               <div class="row">
                 <div class="field col-lg-4">
                   <label for="surname">
-                    Ваша фамилия *
+                    Ваша фамилия <span>*</span>
                   </label><input class="input-auth" type="text" id="surname" placeholder="Фамилия" name="surname"
                     value="" autofocus="" autocomplete="nope" required>
                 </div>
 
                 <div class="field col-lg-4">
                   <label for="Email">
-                    Email *
+                    Email <span>*</span>
                   </label><input class="input-auth" type="email" id="Email" placeholder="Email" name="Email" value=""
                     autocomplete="nope" required>
                 </div>
@@ -146,7 +152,7 @@
               <div class="row">
                 <div class="field col-lg-4">
                   <label for="region">
-                    Ваш регион *
+                    Ваш регион <span>*</span>
                   </label>
                   <select class="input-auth" id="region" name="region" value="" required>
                     <option>-- выберите --</option>
@@ -157,7 +163,7 @@
 
                 <div class="field col-lg-4">
                   <label for="city">
-                    Ваш город *
+                    Ваш город <span>*</span>
                   </label>
                   <select class="input-auth" id="city" name="city" value="" required>
                     <option>-- выберите --</option>
@@ -172,7 +178,7 @@
               <div class="row">
                 <div class="field col-lg-4">
                   <label for="work">
-                    Место работы *
+                    Место работы <span>*</span>
                   </label><input class="input-auth" type="text" id="work" placeholder="Место работы" name="work"
                     value="" autocomplete="nope" required>
                 </div>
@@ -186,7 +192,7 @@
               </div>
             </fieldset>
 
-            <input type="submit" class="button-auth col-lg-3" value="Сохранить">
+            <input type="submit" class="button-auth col-lg-2" value="Сохранить">
           </form>
 
         </div>
@@ -284,25 +290,36 @@
           <div class="for-user-wrapper">
             <ul class="for-user-list">
               <li class="contacts-item">
-                <img src="img/user.svg" width="22" height="22" alt="logo1">
+                <img src="img/point.svg" width="22" height="22" alt="logo1">
                 <span>Олимпийский просп., 1</span>
               </li>
               <li class="contacts-item">
-                <img src="img/user.svg" width="22" height="22" alt="logo1">
+                <img src="img/tel.svg" width="22" height="22" alt="logo1">
                 <p>
-                  Телефон<a href="tel:8 800 999 11 21">8 800 999 11 21</a>
+                  Телефон: <a href="tel:8 800 999 11 21">8 800 999 11 21</a>
                 </p>
               </li>
               <li class="contacts-item">
-                <img src="img/user.svg" width="22" height="22" alt="logo1">
+                <img src="img/mail.svg" width="22" height="22" alt="logo1">
                 <p>
-                  Почта<a href="mailto:info@tvet-congress.ru">info@tvet-congress.ru</a>
+                  Почта: <a href="mailto:info@tvet-congress.ru">info@tvet-congress.ru</a>
                 </p>
               </li>
             </ul>
 
           </div>
 
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bootom-wrapper">
+          <p>
+            © 2021–2022, Институт развития профессионального образования
+          </p>
+
+          <a href="">Политика конфидициальности</a>
         </div>
       </div>
     </div>
@@ -313,6 +330,12 @@
 
       <div class="modals-menu">
         <div class="container">
+          <div class="modals-close">
+
+            <img src="img/close-modals.svg" width="22" height="22" alt="logo1">
+            <span>Меню</span>
+
+          </div>
           <div class="row">
             <div class="col-lg-5">
               <h2>Участнику</h2>
@@ -379,19 +402,19 @@
               <div class="for-user-wrapper">
                 <ul class="for-user-list">
                   <li class="contacts-item">
-                    <img src="img/user.svg" width="22" height="22" alt="logo1">
+                    <img src="img/menu-point.svg" width="22" height="22" alt="point">
                     <span>Олимпийский просп., 1</span>
                   </li>
                   <li class="contacts-item">
-                    <img src="img/user.svg" width="22" height="22" alt="logo1">
+                    <img src="img/menu-tel.svg" width="22" height="22" alt="tel">
                     <p>
-                      Телефон<a href="tel:8 800 999 11 21">8 800 999 11 21</a>
+                      Телефон: <a href="tel:8 800 999 11 21">8 800 999 11 21</a>
                     </p>
                   </li>
                   <li class="contacts-item">
-                    <img src="img/user.svg" width="22" height="22" alt="logo1">
+                    <img src="img/menu-mail.svg" width="22" height="22" alt="mail">
                     <p>
-                      Почта<a href="mailto:info@tvet-congress.ru">info@tvet-congress.ru</a>
+                      Почта: <a href="mailto:info@tvet-congress.ru">info@tvet-congress.ru</a>
                     </p>
                   </li>
                 </ul>
@@ -407,7 +430,9 @@
   </div>
 
   <section class='modal-auth modal-form'>
-
+    <div class="modal-auth-close">
+      <img src="img/close-modals.svg" width="22" height="22" alt="close">
+    </div>
     <div class="tabs">
 
       <div id="tab2" class="tab">
@@ -463,7 +488,9 @@
 
   <script src="./js/jquery.min.js"></script>
   <script src="./js/slick.min.js"></script>
+  <script src="./js/jquery.maskedinput.min.js"></script>
   <script src="./js/main.js"></script>
+
 </body>
 
 </html>

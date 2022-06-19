@@ -1,0 +1,32 @@
+.modal-search {
+  position: fixed;
+  top: -2000px;
+
+  width: 100%;
+
+  z-index: 9;
+  background-color: $color-white;
+  transition: all 0.5s ease;
+
+  & input {
+    border: none;
+    padding: 28px 0;
+    width: 100%;
+
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 27px;
+
+    color: #6A7277;
+
+    outline: none;
+  }
+
+  & .container {
+    position: relative;
+  }
+
+  &.active {
+    top: 0;
+  }
+}

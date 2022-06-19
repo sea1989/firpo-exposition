@@ -8,6 +8,10 @@
   background-color: rgb(255 255 255 / 75%);
   transition: all 0.5s ease;
 
+  & .container {
+    position: relative;
+  }
+
   &.active {
     top: 100px;
   }
@@ -21,8 +25,6 @@
   display: flex;
   justify-content: space-between;
 }
-
-
 
 .modals-menu {
   background-color: $color-blue-violet;
@@ -42,6 +44,10 @@
     border-bottom: 1px solid #55598f;
 
     color: #55598f;
+  }
+
+  & a:hover {
+    color: #6dbedf;
   }
 
   & li a {
@@ -64,4 +70,27 @@
   grid-gap: 14px;
 
   margin-bottom: 26px;
+
+  & p a {
+    color: #0966a0;
+  }
+}
+
+.modals-close {
+  padding: 34px;
+
+  top: -140px;
+  width: fit-content;
+  position: absolute;
+  right: 0;
+  display: flex;
+
+  align-items: center;
+
+  background-color: #272b6a;
+
+  cursor: pointer;
+
+  gap: 5px;
+  text-align: center;
 }
