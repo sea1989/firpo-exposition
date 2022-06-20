@@ -30,6 +30,8 @@
   background-color: $color-blue-violet;
 
   padding-top: 50px;
+  padding-bottom: 36px;
+
   color: $color-white;
 
   width: 100%;
@@ -69,7 +71,11 @@
   display: flex;
   grid-gap: 14px;
 
-  margin-bottom: 26px;
+  margin-bottom: 20px;
+
+  & span {
+    line-height: 32px;
+  }
 
   & p a {
     color: #0966a0;
@@ -77,9 +83,9 @@
 }
 
 .modals-close {
-  padding: 34px;
+  padding: 40px;
 
-  top: -140px;
+  top: -150px;
   width: fit-content;
   position: absolute;
   right: 0;

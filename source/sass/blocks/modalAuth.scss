@@ -2,7 +2,7 @@
   display: none;
   box-sizing: border-box;
   position: fixed;
-  max-width: 360px;
+  min-width: 360px;
   background-color: white;
   box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
   top: 50%;
@@ -28,11 +28,14 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
+    width: 50%;
+    text-align: center;
 
     & a {
       color: $color-blue-dark;
       display: inline-block;
       padding: 20px 33px;
+      width: 100%;
     }
 
     &.active {

@@ -10,10 +10,14 @@
     content: "";
     background: url(/img/bg-lines.svg);
     position: absolute;
+
     top: 170px;
     left: 0px;
     bottom: 0px;
     right: 0px;
+
+    background-position: center;
+    opacity: 0.6;
   }
 
   &__wrapper {
@@ -54,5 +58,11 @@
     margin-top: 24px;
 
     margin-bottom: 36px;
+  }
+}
+
+@media (max-width: $width-tablet) {
+  .promo h1 {
+    font-size: 22px;
   }
 }
