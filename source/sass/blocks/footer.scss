@@ -17,7 +17,7 @@ footer {
   }
 
   & a:hover {
-    color: #6DBEDF;
+    color: #6dbedf;
   }
 
   & li a {
@@ -44,7 +44,7 @@ footer {
   align-items: center;
 
   & a {
-    color: #6DBEDF;
+    color: #6dbedf;
   }
 }
 
@@ -66,5 +66,11 @@ footer {
 
   & a {
     color: #545973;
+  }
+}
+
+@media (max-width: $width-tablet) {
+  footer h2 {
+    padding-top: 22px;
   }
 }

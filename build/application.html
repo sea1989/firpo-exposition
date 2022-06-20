@@ -118,7 +118,6 @@
 
   </header>
 
-
   <section class="application">
     <div class="container">
 
@@ -392,7 +391,7 @@
               <li class="contacts-item">
                 <img src="img/mail.svg" width="22" height="22" alt="logo1">
                 <p>
-                  Почта: <a href="mailto:info@tvet-congress.ru">info@tvet-congress.ru</a>
+                  Email: <a href="mailto:info@tvet-congress.ru">info@tvet-congress.ru</a>
                 </p>
               </li>
             </ul>
@@ -423,7 +422,7 @@
           <div class="modals-close">
 
             <img src="img/close-modals.svg" width="22" height="22" alt="logo1">
-            <span>Меню</span>
+            <span>МЕНЮ</span>
 
           </div>
           <div class="row">
@@ -504,7 +503,7 @@
                   <li class="contacts-item">
                     <img src="img/menu-mail.svg" width="22" height="22" alt="mail">
                     <p>
-                      Почта: <a href="mailto:info@tvet-congress.ru">info@tvet-congress.ru</a>
+                      Email: <a href="mailto:info@tvet-congress.ru">info@tvet-congress.ru</a>
                     </p>
                   </li>
                 </ul>
@@ -527,31 +526,8 @@
 
       <div id="tab2" class="tab">
         <ul class="nav-tabs">
-          <li class="active"><a href="#tab1"> Регистрация</a></li>
-          <li><a href="#tab2">Вход</a></li>
-        </ul>
-
-        <form>
-
-          <fieldset>
-
-            <input class="input-auth" type="text" id="email" placeholder="Ваш Email" name="AUTH_USER" value="" autofocus="" autocomplete="nope" required="">
-
-            <input class="input-auth" type="password" id="pswd" placeholder="Пароль" required="">
-
-            <input type="submit" class="button-auth" value="Войти на сайт">
-            <em>*
-              Нажимая на кнопку вы даёте свое согласие<br>на обработку персональных данных
-            </em>
-          </fieldset>
-
-        </form>
-      </div>
-
-      <div id="tab1" class="tab">
-        <ul class="nav-tabs">
-          <li><a href="#tab1">Регистрация</a></li>
-          <li class="active"><a href="#tab2"> Вход</a></li>
+          <li><a href="#tab1">Вход</a></li>
+          <li class="active"><a href="#tab2"> Регистрация</a></li>
         </ul>
 
         <form>
@@ -571,12 +547,52 @@
 
         </form>
       </div>
+
+      <div id="tab1" class="tab">
+        <ul class="nav-tabs">
+          <li class="active"><a href="#tab1"> Вход</a></li>
+          <li><a href="#tab2">Регистрация</a></li>
+        </ul>
+
+        <form>
+
+          <fieldset>
+
+            <input class="input-auth" type="text" id="email" placeholder="Ваш Email" name="AUTH_USER" value="" autofocus="" autocomplete="nope" required="">
+
+            <input class="input-auth" type="password" id="pswd" placeholder="Пароль" required="">
+
+            <input type="submit" class="button-auth" value="Войти на сайт">
+            <em>*
+              Нажимая на кнопку вы даёте свое согласие<br>на обработку персональных данных
+            </em>
+          </fieldset>
+
+        </form>
+      </div>
+
+
+
     </div>
   </section>
+
+  <div class="modal-search">
+    <div class="container">
+      <form class="search__form" action="/search/" id="search-form">
+        <input class="modal-search-input" type="search" placeholder="Введите поисковую фразу">
+        <button type="submit">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27.6471 26.0043L19.6135 17.9584C21.1973 16.0574 22.1498 13.6281 22.1498 10.9749C22.1498 4.92175 17.1862 0 11.0806 0C4.9751 0 0 4.92749 0 10.9806C0 17.0337 4.96362 21.9555 11.0692 21.9555C13.6629 21.9555 16.05 21.0653 17.9436 19.5779L26.0059 27.6468C26.4765 28.1177 27.1766 28.1177 27.6471 27.6468C28.1176 27.1759 28.1176 26.4752 27.6471 26.0043ZM2.3527 10.9806C2.3527 6.22541 6.26622 2.36037 11.0692 2.36037C15.8721 2.36037 19.7856 6.22541 19.7856 10.9806C19.7856 15.7358 15.8721 19.6009 11.0692 19.6009C6.26622 19.6009 2.3527 15.7301 2.3527 10.9806Z" fill="#6A7277"></path>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
 
   <script src="./js/jquery.min.js"></script>
   <script src="./js/slick.min.js"></script>
   <script src="./js/jquery.maskedinput.min.js"></script>
+  <script src="./js/magnific-popup.min.js"></script>
   <script src="./js/main.js"></script>
 
 </body>

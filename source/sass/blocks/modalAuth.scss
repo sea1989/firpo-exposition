@@ -1,4 +1,6 @@
 .modal-auth {
+  font-family: $font-golos;
+
   display: none;
   box-sizing: border-box;
   position: fixed;
@@ -23,6 +25,7 @@
   display: flex;
   margin-bottom: 28px;
   justify-content: space-between;
+  background-color: $color-blue-extra-light;
 
   & li {
     font-weight: 500;
@@ -39,7 +42,7 @@
     }
 
     &.active {
-      background-color: $color-blue-extra-light;
+      background-color: $color-white;
 
       & a {
         color: #0966a0;
@@ -73,8 +76,10 @@
       font-weight: 400;
       font-size: 12px;
       line-height: 18px;
-      font-style: italic;
+      text-align: center;
       color: #7c8388;
+
+      padding-bottom: 14px;
     }
   }
 }

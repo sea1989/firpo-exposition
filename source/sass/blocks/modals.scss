@@ -100,3 +100,9 @@
   gap: 5px;
   text-align: center;
 }
+
+@media (max-width: $width-tablet) {
+  .modals h2 {
+    padding-top: 22px;
+  }
+}
