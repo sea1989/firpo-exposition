@@ -82,7 +82,6 @@ jQuery(document).ready(function ($) {
     return false;
   });
 
-
   $(".user").click(function () {
     $(".modal-auth").addClass("active");
     $(".body").addClass("noscroll2");
@@ -97,6 +96,7 @@ jQuery(document).ready(function ($) {
 
   $(".header__btn-search").click(function () {
     $(".modal-search").addClass("active");
+    $(".modal-search-input").focus();
     return false;
   });
 
@@ -107,7 +107,6 @@ jQuery(document).ready(function ($) {
       $(".modal-search").removeClass("active");
     }
   });
-
 
   $(document).click(function (e) { // событие клика по веб-документу
     var div = $(".modals"); // тут указываем ID элемента
