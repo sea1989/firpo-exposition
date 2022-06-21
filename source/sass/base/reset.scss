@@ -76,6 +76,11 @@ main {
 
 body {
   line-height: 1;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
 }
 
 ol,

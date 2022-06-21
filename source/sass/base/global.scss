@@ -25,10 +25,6 @@ img {
   margin-bottom: 12px;
 }
 
-main {
-  min-height: 100vh;
-}
-
 button {
   display: flex;
   align-items: center;
@@ -97,11 +93,11 @@ button span {
 }
 
 .slider .slick-prev::before {
-  content: url("/img/left.svg");
+  content: url("../img/left.svg");
 }
 
 .slider .slick-next::before {
-  content: url("/img/right.svg");
+  content: url("../img/right.svg");
 }
 
 .slick-dots li {
@@ -141,11 +137,11 @@ button span {
 }
 
 .slider2 .slick-prev::before {
-  content: url("/img/news-left.svg");
+  content: url("../img/news-left.svg");
 }
 
 .slider2 .slick-next::before {
-  content: url("/img/news-right.svg");
+  content: url("../img/news-right.svg");
 }
 
 .slider2 .slick-dots li {
