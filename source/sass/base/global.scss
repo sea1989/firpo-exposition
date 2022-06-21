@@ -25,6 +25,10 @@ img {
   margin-bottom: 12px;
 }
 
+main {
+  min-height: 100vh;
+}
+
 button {
   display: flex;
   align-items: center;
@@ -235,5 +239,4 @@ body input:focus:required:invalid {
   .slider3 .slick-next {
     right: 0;
   }
-
 }

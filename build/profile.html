@@ -118,114 +118,118 @@
 
   </header>
 
-  <section class="profile">
-    <div class="container">
+  <main class="main">
+    <section class="profile">
+      <div class="container">
 
-      <div class="profile-wrapper">
-        <div class="profile-main">
-          <h2> Мой профиль</h2>
+        <div class="profile-wrapper">
+          <div class="profile-main">
+            <h2> Мой профиль</h2>
 
-          <div class="profile-main-wrapper">
+            <div class="profile-main-wrapper">
 
-            <form>
-              <fieldset>
-                <div class="row">
-                  <div class="field col-lg-6">
-                    <label for="surname">
-                      Ваша фамилия <span>*</span>
-                    </label><input class="input-auth" type="text" id="surname" placeholder="Фамилия" name="surname" value="" autofocus="" autocomplete="nope" required="">
+              <form>
+                <fieldset>
+                  <div class="row">
+                    <div class="field col-lg-6">
+                      <label for="surname">
+                        Ваша фамилия <span>*</span>
+                      </label><input class="input-auth" type="text" id="surname" placeholder="Фамилия" name="surname" value="" autofocus="" autocomplete="nope" required="">
+                    </div>
+
+                    <div class="field col-lg-6">
+                      <label for="Email">
+                        Email <span>*</span>
+                      </label><input class="input-auth" type="email" id="Email" placeholder="Email" name="Email" value="" autocomplete="nope" required="">
+                    </div>
+
                   </div>
+                </fieldset>
 
-                  <div class="field col-lg-6">
-                    <label for="Email">
-                      Email <span>*</span>
-                    </label><input class="input-auth" type="email" id="Email" placeholder="Email" name="Email" value="" autocomplete="nope" required="">
+                <fieldset>
+                  <div class="row">
+                    <div class="field col-lg-6">
+                      <label for="region">
+                        Ваш регион <span>*</span>
+                      </label>
+                      <select class="input-auth" id="region" name="region" value="" required="">
+                        <option>-- выберите --</option>
+                        <option>Центральный</option>
+                        <option>Южный</option>
+                      </select>
+                    </div>
+
+                    <div class="field col-lg-6">
+                      <label for="city">
+                        Ваш город <span>*</span>
+                      </label>
+                      <select class="input-auth" id="city" name="city" value="" required="">
+                        <option>-- выберите --</option>
+                        <option>Москва</option>
+                        <option>Саратов</option>
+                      </select>
+                    </div>
                   </div>
+                </fieldset>
 
+                <fieldset>
+                  <div class="row">
+                    <div class="field col-lg-6">
+                      <label for="work">
+                        Место работы <span>*</span>
+                      </label><input class="input-auth" type="text" id="work" placeholder="Место работы" name="work" value="" autocomplete="nope" required="">
+                    </div>
+
+                    <div class="field col-lg-6">
+                      <label for="vacation">
+                        Должность
+                      </label><input class="input-auth" type="text" id="vacation" placeholder="Должность" name="vacation" value="" autocomplete="nope">
+                    </div>
+                  </div>
+                </fieldset>
+
+                <input type="submit" class="button-auth col-lg-3" value="Сохранить">
+              </form>
+
+              <div class="image-upload">
+                <div class="user-ava">
+                  <label for="file-upload"></label>
+                  <input id="file-upload" type="file">
+                  <span>изменить</span>
                 </div>
-              </fieldset>
-
-              <fieldset>
-                <div class="row">
-                  <div class="field col-lg-6">
-                    <label for="region">
-                      Ваш регион <span>*</span>
-                    </label>
-                    <select class="input-auth" id="region" name="region" value="" required="">
-                      <option>-- выберите --</option>
-                      <option>Центральный</option>
-                      <option>Южный</option>
-                    </select>
-                  </div>
-
-                  <div class="field col-lg-6">
-                    <label for="city">
-                      Ваш город <span>*</span>
-                    </label>
-                    <select class="input-auth" id="city" name="city" value="" required="">
-                      <option>-- выберите --</option>
-                      <option>Москва</option>
-                      <option>Саратов</option>
-                    </select>
-                  </div>
-                </div>
-              </fieldset>
-
-              <fieldset>
-                <div class="row">
-                  <div class="field col-lg-6">
-                    <label for="work">
-                      Место работы <span>*</span>
-                    </label><input class="input-auth" type="text" id="work" placeholder="Место работы" name="work" value="" autocomplete="nope" required="">
-                  </div>
-
-                  <div class="field col-lg-6">
-                    <label for="vacation">
-                      Должность
-                    </label><input class="input-auth" type="text" id="vacation" placeholder="Должность" name="vacation" value="" autocomplete="nope">
-                  </div>
-                </div>
-              </fieldset>
-
-              <input type="submit" class="button-auth col-lg-3" value="Сохранить">
-            </form>
-
-            <div class="image-upload">
-              <div class="user-ava">
-                <label for="file-upload"></label>
-                <input id="file-upload" type="file">
-                <span>изменить</span>
               </div>
+
             </div>
 
           </div>
 
-        </div>
+          <div class="inner-menu">
+            <ul class="modals-menu__list">
+              <li class="modals-menu__item">
+                <a href="#">Подать заявку на участие</a>
+              </li>
+              <li class="modals-menu__item">
+                <a href="#">Мой профиль</a>
+              </li>
+              <li class="modals-menu__item">
+                <a href="#">Заявление для ФСО</a>
+              </li>
+              <li class="modals-menu__item">
+                <a href="#">Сменить пароль</a>
+              </li>
+              <li class="modals-menu__item">
+                <a href="#">Выход</a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="inner-menu">
-          <ul class="modals-menu__list">
-            <li class="modals-menu__item">
-              <a href="#">Подать заявку на участие</a>
-            </li>
-            <li class="modals-menu__item">
-              <a href="#">Мой профиль</a>
-            </li>
-            <li class="modals-menu__item">
-              <a href="#">Заявление для ФСО</a>
-            </li>
-            <li class="modals-menu__item">
-              <a href="#">Сменить пароль</a>
-            </li>
-            <li class="modals-menu__item">
-              <a href="#">Выход</a>
-            </li>
-          </ul>
         </div>
 
       </div>
+    </section>
+  </main>
 
-    </div>
-  </section>
+
 
   <footer>
     <div class="container">

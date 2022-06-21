@@ -118,103 +118,106 @@
 
   </header>
 
+  <main class="main">
 
-  <section class="profile">
-    <div class="container">
+    <section class="profile">
+      <div class="container">
 
-      <div class="profile-wrapper">
-        <div class="profile-main">
-          <h2> Заявление для ФСО</h2>
+        <div class="profile-wrapper">
+          <div class="profile-main">
+            <h2> Заявление для ФСО</h2>
 
-          <form>
-            <fieldset>
-              <div class="row">
-                <div class="field col-lg-4">
-                  <label for="surname">
-                    Ваша фамилия <span>*</span>
-                  </label><input class="input-auth" type="text" id="surname" placeholder="Фамилия" name="surname" value="" autofocus="" autocomplete="nope" required="">
+            <form>
+              <fieldset>
+                <div class="row">
+                  <div class="field col-lg-4">
+                    <label for="surname">
+                      Ваша фамилия <span>*</span>
+                    </label><input class="input-auth" type="text" id="surname" placeholder="Фамилия" name="surname" value="" autofocus="" autocomplete="nope" required="">
+                  </div>
+
+                  <div class="field col-lg-4">
+                    <label for="Email">
+                      Email <span>*</span>
+                    </label><input class="input-auth" type="email" id="Email" placeholder="Email" name="Email" value="" autocomplete="nope" required="">
+                  </div>
+
                 </div>
+              </fieldset>
 
-                <div class="field col-lg-4">
-                  <label for="Email">
-                    Email <span>*</span>
-                  </label><input class="input-auth" type="email" id="Email" placeholder="Email" name="Email" value="" autocomplete="nope" required="">
+              <fieldset>
+                <div class="row">
+                  <div class="field col-lg-4">
+                    <label for="region">
+                      Ваш регион <span>*</span>
+                    </label>
+                    <select class="input-auth" id="region" name="region" value="" required="">
+                      <option>-- выберите --</option>
+                      <option>Центральный</option>
+                      <option>Южный</option>
+                    </select>
+                  </div>
+
+                  <div class="field col-lg-4">
+                    <label for="city">
+                      Ваш город <span>*</span>
+                    </label>
+                    <select class="input-auth" id="city" name="city" value="" required="">
+                      <option>-- выберите --</option>
+                      <option>Москва</option>
+                      <option>Саратов</option>
+                    </select>
+                  </div>
                 </div>
+              </fieldset>
 
-              </div>
-            </fieldset>
+              <fieldset>
+                <div class="row">
+                  <div class="field col-lg-4">
+                    <label for="work">
+                      Место работы <span>*</span>
+                    </label><input class="input-auth" type="text" id="work" placeholder="Место работы" name="work" value="" autocomplete="nope" required="">
+                  </div>
 
-            <fieldset>
-              <div class="row">
-                <div class="field col-lg-4">
-                  <label for="region">
-                    Ваш регион <span>*</span>
-                  </label>
-                  <select class="input-auth" id="region" name="region" value="" required="">
-                    <option>-- выберите --</option>
-                    <option>Центральный</option>
-                    <option>Южный</option>
-                  </select>
+                  <div class="field col-lg-4">
+                    <label for="vacation">
+                      Должность
+                    </label><input class="input-auth" type="text" id="vacation" placeholder="Должность" name="vacation" value="" autocomplete="nope">
+                  </div>
                 </div>
+              </fieldset>
 
-                <div class="field col-lg-4">
-                  <label for="city">
-                    Ваш город <span>*</span>
-                  </label>
-                  <select class="input-auth" id="city" name="city" value="" required="">
-                    <option>-- выберите --</option>
-                    <option>Москва</option>
-                    <option>Саратов</option>
-                  </select>
-                </div>
-              </div>
-            </fieldset>
+              <input type="submit" class="button-auth col-lg-2" value="Сохранить">
+            </form>
 
-            <fieldset>
-              <div class="row">
-                <div class="field col-lg-4">
-                  <label for="work">
-                    Место работы <span>*</span>
-                  </label><input class="input-auth" type="text" id="work" placeholder="Место работы" name="work" value="" autocomplete="nope" required="">
-                </div>
+          </div>
 
-                <div class="field col-lg-4">
-                  <label for="vacation">
-                    Должность
-                  </label><input class="input-auth" type="text" id="vacation" placeholder="Должность" name="vacation" value="" autocomplete="nope">
-                </div>
-              </div>
-            </fieldset>
+          <div class="inner-menu">
+            <ul class="modals-menu__list">
+              <li class="modals-menu__item">
+                <a href="#">Подать заявку на участие</a>
+              </li>
+              <li class="modals-menu__item">
+                <a href="#">Мой профиль</a>
+              </li>
+              <li class="modals-menu__item">
+                <a href="#">Заявление для ФСО</a>
+              </li>
+              <li class="modals-menu__item">
+                <a href="#">Сменить пароль</a>
+              </li>
+              <li class="modals-menu__item">
+                <a href="#">Выход</a>
+              </li>
+            </ul>
+          </div>
 
-            <input type="submit" class="button-auth col-lg-2" value="Сохранить">
-          </form>
-
-        </div>
-
-        <div class="inner-menu">
-          <ul class="modals-menu__list">
-            <li class="modals-menu__item">
-              <a href="#">Подать заявку на участие</a>
-            </li>
-            <li class="modals-menu__item">
-              <a href="#">Мой профиль</a>
-            </li>
-            <li class="modals-menu__item">
-              <a href="#">Заявление для ФСО</a>
-            </li>
-            <li class="modals-menu__item">
-              <a href="#">Сменить пароль</a>
-            </li>
-            <li class="modals-menu__item">
-              <a href="#">Выход</a>
-            </li>
-          </ul>
         </div>
 
       </div>
+    </section>
 
-    </div>
-  </section>
+  </main>
 
   <footer>
     <div class="container">
