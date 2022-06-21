@@ -65,6 +65,21 @@ button span {
   z-index: 1;
 }
 
+.default-button {
+  background-color: $color-blue-light;
+  color: $color-blue-dark;
+  padding: 18px;
+  border: none;
+
+  cursor: pointer;
+
+  font-family: $font-golos;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
 .noscroll,
 .noscroll2 {
   overflow: hidden;
