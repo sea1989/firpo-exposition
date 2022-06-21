@@ -76,6 +76,11 @@
 
   text-align: center;
 
+  &:hover {
+    background: #00a1d5;
+    color: #e9f2f6;
+  }
+
   &.current {
     background: #00a1d5;
     color: #e9f2f6;
