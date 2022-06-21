@@ -65,15 +65,30 @@ button span {
   z-index: 1;
 }
 
-.default-button {
-  background-color: $color-blue-light;
-  color: $color-blue-dark;
+.button-auth {
+  background-color: #6dbedf;
+  color: #0d113a;
   padding: 18px;
   border: none;
 
   cursor: pointer;
 
-  font-family: $font-golos;
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.default-button {
+  background-color: #6dbedf;
+  color: #0d113a;
+  padding: 18px;
+  border: none;
+
+  cursor: pointer;
+
+  font-family: "Golos Text";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -250,4 +265,5 @@ body input:focus:required:invalid {
   .slider3 .slick-next {
     right: 0;
   }
+
 }

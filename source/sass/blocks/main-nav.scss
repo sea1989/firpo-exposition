@@ -61,6 +61,22 @@
   z-index: 1;
 }
 
+.modals-menu__item.main__nav--item {
+  padding-right: 0;
+}
+
+.menu-top__submenu.submenu-hover {
+  width: fit-content;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.menu-top__submenu.submenu-hover a:hover,
+.menu-top__submenu.submenu-hover a {
+  line-height: 20px;
+  padding: 18px 32px;
+}
+
 .menu-top__submenu::before {
   position: absolute;
   top: -12px;

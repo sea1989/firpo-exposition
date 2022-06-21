@@ -102,8 +102,6 @@
   }
 }
 
-
-
 .modal-auth-close {
   display: flex;
   width: fit-content;
@@ -112,4 +110,11 @@
   position: absolute;
 
   cursor: pointer;
+}
+
+@media (max-width: 767.2px) {
+  .modal-auth-close {
+    right: -3px;
+    top: -30px;
+  }
 }

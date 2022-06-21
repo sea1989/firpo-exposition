@@ -162,4 +162,23 @@ jQuery(document).ready(function ($) {
     }
   });
 
+  ymaps.ready(function () {
+    var lat = 43.414516,
+      lng = 39.950749,
+      zoom = 11,
+      mark = "img/icon_map_marker.png";
+
+    window.myMap = new ymaps.Map('map', {
+      center: [lng, lat],
+      zoom: zoom
+    });
+    myPlacemark = new ymaps.Placemark([lng, lat], {}, { draggable: false, iconImageHref: mark, iconImageSize: [30, 45], });
+
+    myMap.geoObjects.add(myPlacemark);
+    myPlacemark.events.add('dragend', function (e) {
+      coord = myPlacemark.geometry.getCoordinates();
+    });
+    myMap.controls.add('zoomControl');
+  });
+
 });
