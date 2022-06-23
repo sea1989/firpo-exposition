@@ -1,0 +1,61 @@
+// стили для SELECT //
+
+// PLACEHOLDER
+body .select2-container--default {
+  margin-top: 8px;
+
+  width: 100%;
+}
+
+body
+  .select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered {
+  padding: 12px;
+}
+
+body .select2 .select2-selection--single {
+  height: auto;
+  border-radius: 0;
+
+  border: 1px solid #eaf2f6;
+}
+
+// Выпадающий список
+
+body .select2-dropdown {
+  border: 1px solid #eaf2f6;
+  box-shadow: 0px 10px 10px rgba(34, 34, 34, 0.05);
+  border-radius: 0;
+}
+
+body .select2-container--default .select2-results__option--selected {
+  background-color: white;
+}
+
+body .select2-results__option {
+  padding: 17px;
+  color: #7c8388;
+}
+
+body
+  .select2-container--default
+  .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: #272b6a;
+  color: white;
+
+  border: 1px solid #eaf2f6;
+  box-shadow: 0px 10px 10px rgba(34, 34, 34, 0.05);
+}
+
+// стрелочка //
+body
+  .select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  height: 100%;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 20px;
+}

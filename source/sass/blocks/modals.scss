@@ -101,8 +101,21 @@
   text-align: center;
 }
 
-@media (max-width: $width-tablet) {
+@media (max-width: 767px) {
   .modals h2 {
     padding-top: 22px;
+  }
+
+  .modals.active {
+    top: 65px;
+  }
+
+  .modals-close span {
+    display: none;
+  }
+
+  .modals-close {
+    padding: 26px;
+    top: -120px;
   }
 }

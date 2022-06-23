@@ -162,4 +162,25 @@ jQuery(document).ready(function ($) {
     }
   });
 
+  // function formatState(state) {
+  //   if (!state.id) {
+  //     return state.text;
+  //   }
+  //   str = "";
+  //   str += "<p style='padding: 17px; font-style: normal;font-weight: 400; font-size: 16px; line-height: 19px; color: #7C8388;'>" + state.text + "</p>";
+  //   var $state = $(str);
+  //   return $state;
+  // };
+
+  $('.js-example-basic-single').select2({
+    placeholder: "-- выберите --",
+    // templateResult: formatState,
+    // containerCssClass: "error",
+    // dropdownCssClass: "test"
+  });
+
 });
+
+// $(document).ready(function() {
+//   $('.js-example-basic-single').select2();
+// });

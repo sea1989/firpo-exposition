@@ -17,6 +17,7 @@ $container-max-widths: (
 @import "./libs/slick.scss";
 @import "./libs/slick-theme.scss";
 @import "./libs/magnific-popup.scss";
+@import "./libs/select2.scss";
 
 /* Blocks */
 @import "./blocks/body.scss";
@@ -44,3 +45,7 @@ $container-max-widths: (
 @import "./blocks/modalAuth.scss";
 @import "./blocks/innerMenu.scss";
 @import "./blocks/modalSearch.scss";
+
+//для настройки SELECT
+
+@import "./blocks/selectUser.scss";
