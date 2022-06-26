@@ -44,6 +44,20 @@
   }
 }
 
+.header__logo {
+  display: flex;
+  gap: 16px;
+}
+
+@media (max-width: 767px) {
+  .header__logo {
+    gap: 2px;
+  }
+
+  .user__link .lk {
+    font-size: 12px;
+  }
+}
 
 @media (max-width: $width-tablet) {
   .header__btn-search span,

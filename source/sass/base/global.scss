@@ -270,3 +270,11 @@ body input:focus:required:invalid {
     height: 65px;
   }
 }
+
+.room {
+  fill: white;
+}
+
+.room:hover {
+  fill: #EBF0FC;
+}
