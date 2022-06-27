@@ -181,6 +181,20 @@ jQuery(document).ready(function ($) {
 
 });
 
-// $(document).ready(function() {
-//   $('.js-example-basic-single').select2();
-// });
+const tooltip = document.querySelector('.tooltip');
+const rooms = document.querySelectorAll('.room');
+
+rooms.forEach(room => {
+  room.addEventListener('click', function (e) {
+    // tooltip.innerText = this.dataset.title;
+    rooms.forEach(room => {
+      room.classList.remove('room--active');
+    })
+    room.classList.add('room--active')
+    tooltip.querySelector('.room-id').innerText = this.dataset.title;
+
+    tooltip.style.top = (e.y - 250) + 'px';
+    tooltip.style.left = (e.x + 0) + 'px';
+    tooltip.style.display = 'block';
+  })
+})

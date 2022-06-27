@@ -271,10 +271,44 @@ body input:focus:required:invalid {
   }
 }
 
+/* ROOMS */
+
 .room {
-  fill: white;
+  fill: none;
+  cursor: pointer;
+  pointer-events: all;
 }
 
-.room:hover {
-  fill: #EBF0FC;
+.room--active {
+  fill: #ebf0fc;
+}
+
+.tooltip {
+  position: absolute;
+  padding: 22px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+
+  display: none;
+
+  max-width: 317px;
+}
+
+.employee-fio {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #444444;
+}
+
+.employee-position {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* or 133% */
+
+  color: #c3cad6;
 }
