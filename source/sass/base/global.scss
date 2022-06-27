@@ -360,3 +360,12 @@ body input:focus:required:invalid {
 
   color: #c3cad6;
 }
+
+.tooltip-close {
+  display: flex;
+  width: fit-content;
+  right: 4px;
+  top: 4px;
+  position: absolute;
+  cursor: pointer;
+}

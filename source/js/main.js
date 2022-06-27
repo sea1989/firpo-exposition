@@ -191,6 +191,8 @@ jQuery(document).ready(function ($) {
 const tooltip = document.querySelector('.tooltip');
 const rooms = document.querySelectorAll('.room');
 
+const tooltipClose = tooltip.querySelector('.tooltip-close');
+
 rooms.forEach(room => {
   room.addEventListener('click', function (e) {
 
@@ -205,9 +207,17 @@ rooms.forEach(room => {
     tooltip.querySelector('.room-id').innerText = this.dataset.title;
 
     tooltip.style.top = (rect.y - 220) + 'px';
-    tooltip.style.left = (rect.x - 158 + rect.width/2) + 'px';
+    tooltip.style.left = (rect.x - 158 + rect.width / 2) + 'px';
     tooltip.style.display = 'block';
 
     console.log(rect)
   })
 })
+
+
+tooltipClose.addEventListener('click', function () {
+  rooms.forEach(room => {
+    room.classList.remove('room--active');
+  });
+  tooltip.style.display = 'none';
+});
