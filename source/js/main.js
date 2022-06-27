@@ -179,6 +179,13 @@ jQuery(document).ready(function ($) {
     // dropdownCssClass: "test"
   });
 
+  $('.js-example-basic-single--nosearch').select2({
+    placeholder: "-- выберите --",
+    // templateResult: formatState,
+    // containerCssClass: "error",
+    // dropdownCssClass: "test"
+  });
+
 });
 
 const tooltip = document.querySelector('.tooltip');
@@ -186,6 +193,10 @@ const rooms = document.querySelectorAll('.room');
 
 rooms.forEach(room => {
   room.addEventListener('click', function (e) {
+
+    var rect = e.target.getBoundingClientRect();
+    posX = rect.left, posY = rect.top;
+
     // tooltip.innerText = this.dataset.title;
     rooms.forEach(room => {
       room.classList.remove('room--active');
@@ -193,8 +204,10 @@ rooms.forEach(room => {
     room.classList.add('room--active')
     tooltip.querySelector('.room-id').innerText = this.dataset.title;
 
-    tooltip.style.top = (e.y - 250) + 'px';
-    tooltip.style.left = (e.x + 0) + 'px';
+    tooltip.style.top = (rect.y - 220) + 'px';
+    tooltip.style.left = (rect.x - 158 + rect.width/2) + 'px';
     tooltip.style.display = 'block';
+
+    console.log(rect)
   })
 })
