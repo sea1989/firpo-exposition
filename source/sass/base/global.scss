@@ -273,6 +273,31 @@ body input:focus:required:invalid {
 
 /* ROOMS */
 
+.rooms-main {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  color: #0d113a;
+  padding: 50px 100px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  width: 100%;
+}
+
+.rooms-main h2 {
+  font-size: 32px;
+  line-height: 47px;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+
+.room-svg {
+  width: 100%;
+}
+
 .room {
   fill: none;
   cursor: pointer;
