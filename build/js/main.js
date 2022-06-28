@@ -193,9 +193,11 @@ const rooms = document.querySelectorAll('.room');
 
 const tooltipClose = tooltip.querySelector('.tooltip-close');
 
+
+
 rooms.forEach(room => {
   room.addEventListener('click', function (e) {
-
+    let scrollY = window.scrollY;
     var rect = e.target.getBoundingClientRect();
     posX = rect.left, posY = rect.top;
 
@@ -206,11 +208,12 @@ rooms.forEach(room => {
     room.classList.add('room--active')
     tooltip.querySelector('.room-id').innerText = this.dataset.title;
 
-    tooltip.style.top = (rect.y - 220) + 'px';
+    tooltip.style.top = (rect.y - 220 + scrollY) + 'px';
     tooltip.style.left = (rect.x - 158 + rect.width / 2) + 'px';
     tooltip.style.display = 'block';
 
     console.log(rect)
+    console.log(scrollY)
   })
 })
 
