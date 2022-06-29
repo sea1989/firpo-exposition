@@ -211,9 +211,6 @@ rooms.forEach(room => {
     tooltip.style.top = (rect.y - 220 + scrollY) + 'px';
     tooltip.style.left = (rect.x - 158 + rect.width / 2) + 'px';
     tooltip.style.display = 'block';
-
-    console.log(rect)
-    console.log(scrollY)
   })
 })
 
@@ -224,3 +221,29 @@ tooltipClose.addEventListener('click', function () {
   });
   tooltip.style.display = 'none';
 });
+
+/* tabs room */
+
+const tabsBtn = document.querySelectorAll('.tabs__nav-btn');
+const tabsItems = document.querySelectorAll('.tabs__item');
+
+tabsBtn.forEach(function (item) {
+  item.addEventListener('click', function () {
+    let currentBtn = item;
+    let tabId = currentBtn.getAttribute('data-tab');
+    let currentTab = document.querySelector(tabId);
+
+    if (!currentBtn.classList.contains('active')) {
+      tabsBtn.forEach(function (item) {
+        item.classList.remove('active');
+      });
+    }
+
+    tabsItems.forEach(function (item) {
+      item.classList.remove('active');
+    });
+
+    currentBtn.classList.add('active');
+    currentTab.classList.add('active');
+  })
+})

@@ -271,6 +271,52 @@ body input:focus:required:invalid {
   }
 }
 
+/* TABS Room */
+@at-root .tabs {
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.tabs__nav {
+  display: flex;
+  gap: 43px;
+}
+
+.tabs__nav-btn {
+  padding: 15px 30px;
+
+  font-size: 20px;
+
+  background-color: #3464e0;
+  border: 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tabs__nav-btn:hover {
+  background-color: #ddd;
+}
+
+.tabs__nav-btn.active {
+  background-color: #fff;
+  border-color: #3464e0;
+  color: #3464e0;
+}
+
+.tabs__content {
+  padding: 30px;
+  background-color: #fff;
+}
+
+.tabs__item {
+  display: none;
+}
+
+.tabs__item.active {
+  display: block;
+}
+
 /* ROOMS */
 
 .rooms-main {
