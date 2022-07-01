@@ -301,7 +301,7 @@ body input:focus:required:invalid {
   cursor: pointer;
 }
 
-.tabs__nav-btn span {
+.tabs__number {
   position: absolute;
   background: #fff;
 
@@ -314,6 +314,10 @@ body input:focus:required:invalid {
   right: -10px;
   top: -10px;
   color: #3464e0;
+}
+.tabs__number.active {
+  color: #fff;
+  background: #3464e0;
 }
 
 .tabs__nav-btn:hover {

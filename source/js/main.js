@@ -226,15 +226,20 @@ tooltipClose.addEventListener('click', function () {
 
 const tabsBtn = document.querySelectorAll('.tabs__nav-btn');
 const tabsItems = document.querySelectorAll('.tabs__item');
+const tabsNumbers = document.querySelectorAll('.tabs__number');
 
 tabsBtn.forEach(function (item) {
   item.addEventListener('click', function () {
     let currentBtn = item;
     let tabId = currentBtn.getAttribute('data-tab');
     let currentTab = document.querySelector(tabId);
+    let CurrentTabsNumbers = currentBtn.querySelector('.tabs__number');
 
     if (!currentBtn.classList.contains('active')) {
       tabsBtn.forEach(function (item) {
+        item.classList.remove('active');
+      });
+      tabsNumbers.forEach(function (item) {
         item.classList.remove('active');
       });
     }
@@ -243,7 +248,9 @@ tabsBtn.forEach(function (item) {
       item.classList.remove('active');
     });
 
+
     currentBtn.classList.add('active');
     currentTab.classList.add('active');
+    CurrentTabsNumbers.classList.add('active');
   })
 })
