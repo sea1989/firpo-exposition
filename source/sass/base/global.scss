@@ -281,6 +281,8 @@ body input:focus:required:invalid {
   display: flex;
   gap: 43px;
 
+  flex-wrap: wrap;
+
   justify-content: center;
 
   margin-bottom: 50px;
