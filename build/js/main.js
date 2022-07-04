@@ -142,7 +142,6 @@ jQuery(document).ready(function ($) {
     $(this).setCursorPosition(3);
   }).mask("+7(N99) 999-99-99");
 
-
   $('.popup-gallery').magnificPopup({
     delegate: 'a',
     type: 'image',
@@ -193,8 +192,6 @@ const rooms = document.querySelectorAll('.room');
 
 const tooltipClose = tooltip.querySelector('.tooltip-close');
 
-
-
 rooms.forEach(room => {
   room.addEventListener('click', function (e) {
     let scrollY = window.scrollY;
@@ -213,7 +210,6 @@ rooms.forEach(room => {
     tooltip.style.display = 'block';
   })
 })
-
 
 tooltipClose.addEventListener('click', function () {
   rooms.forEach(room => {
@@ -247,7 +243,6 @@ tabsBtn.forEach(function (item) {
     tabsItems.forEach(function (item) {
       item.classList.remove('active');
     });
-
 
     currentBtn.classList.add('active');
     currentTab.classList.add('active');
