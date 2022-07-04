@@ -128,8 +128,20 @@
             <h2> Заявление для ФСО</h2>
 
             <form>
+
               <fieldset>
                 <div class="row">
+                  <div class="field col-lg-4">
+                    <label for="country">
+                      Страна <span>*</span>
+                    </label>
+                    <select class="input-auth js-example-basic-single" id="country" name="country" value="" required="">
+                      <option></option>
+                      <option>РФ</option>
+                      <option>Беларусь</option>
+                    </select>
+                  </div>
+
                   <div class="field col-lg-4">
                     <label for="surname">
                       Ваша фамилия <span>*</span>
@@ -137,9 +149,9 @@
                   </div>
 
                   <div class="field col-lg-4">
-                    <label for="Email">
-                      Email <span>*</span>
-                    </label><input class="input-auth" type="email" id="Email" placeholder="Email" name="Email" value="" autocomplete="nope" required="">
+                    <label for="surname">
+                      Фамилия (транслит ENG) <span>*</span>
+                    </label><input class="input-auth" type="text" id="surname" placeholder="Фамилия" name="surname" value="" autofocus="" autocomplete="nope" required="">
                   </div>
 
                 </div>
@@ -148,11 +160,85 @@
               <fieldset>
                 <div class="row">
                   <div class="field col-lg-4">
-                    <label for="region">
-                      Ваш регион <span>*</span>
+                    <label for="name">
+                      Ваше имя <span>*</span>
+                    </label><input class="input-auth" type="text" id="name" placeholder="Имя" name="name" value="" required="">
+                  </div>
+
+                  <div class="field col-lg-4">
+                    <label for="name">
+                      Имя (транслит ENG) <span>*</span>
+                    </label><input class="input-auth" type="text" id="name" placeholder="Имя" name="name" value="" required="">
+                  </div>
+
+                  <div class="field col-lg-4">
+                    <label for="patronymic">
+                      Ваше Отчество <span>*</span>
+                    </label><input class="input-auth" type="text" id="patronymic" placeholder="Отчество" name="patronymic" value="" required="">
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <div class="row">
+
+                  <div class="field col-lg-4">
+                    <label for="country">
+                      Гражданство <span>*</span>
                     </label>
-                    <select class="input-auth" id="region" name="region" value="" required="">
-                      <option>-- выберите --</option>
+                    <select class="input-auth js-example-basic-single" id="country" name="country" value="" required="">
+                      <option></option>
+                      <option>РФ</option>
+                      <option>Беларусь</option>
+                    </select>
+                  </div>
+
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <div class="row">
+
+                  <div class="field col-lg-4">
+                    <label for="number-akk">
+                      Номер аккредитации МИД РФ
+                    </label><input class="input-auth" type="number" id="number-akk" placeholder="Номер аккретидации" name="number-akk" value="" autocomplete="nope">
+                  </div>
+
+                  <div class="field col-lg-4">
+                    <label for="document-series">
+                      Серия документа<span>*</span>
+                    </label><input class="input-auth" type="number" id="document-series" placeholder="Серия документа" name="document-series" value="" autocomplete="nope" required="">
+                  </div>
+
+                  <div class="field col-lg-4">
+                    <label for="document-numbers">
+                      Номер документа<span>*</span>
+                    </label><input class="input-auth" type="number" id="document-numbers" placeholder="Номер документа" name="document-numbers" value="" autocomplete="nope" required="">
+                  </div>
+
+                </div>
+              </fieldset>
+
+              <!-- <fieldset>
+                <div class="row">
+                  <div class="field col-lg-4">
+                    <label for="country">
+                      Страна <span>*</span>
+                    </label>
+                    <select class="input-auth js-example-basic-single" id="country" name="country" value="" required>
+                      <option></option>
+                      <option>РФ</option>
+                      <option>Беларусь</option>
+                    </select>
+                  </div>
+
+                  <div class="field col-lg-4">
+                    <label for="region">
+                      Регион РФ <span>*</span>
+                    </label>
+                    <select class="input-auth js-example-basic-single" id="region" name="region" value="" required>
+                      <option></option>
                       <option>Центральный</option>
                       <option>Южный</option>
                     </select>
@@ -160,10 +246,32 @@
 
                   <div class="field col-lg-4">
                     <label for="city">
-                      Ваш город <span>*</span>
+                      Город <span>*</span>
                     </label>
-                    <select class="input-auth" id="city" name="city" value="" required="">
-                      <option>-- выберите --</option>
+                    <select class="input-auth js-example-basic-single" id="city" name="city" value="" required>
+                      <option></option>
+                      <option>Москва</option>
+                      <option>Саратов</option>
+                    </select>
+                  </div>
+
+                </div>
+              </fieldset> -->
+
+              <fieldset>
+                <div class="row">
+                  <div class="field col-lg-6">
+                    <label for="birthday-date">
+                      Дата рождения <span>*</span>
+                    </label><input class="input-auth" type="date" id="work" placeholder="05.06.1989" name="birthday-date" value="" autocomplete="nope" required="">
+                  </div>
+
+                  <div class="field col-lg-6">
+                    <label for="birthday-place">
+                      Место рождения<span>*</span>
+                    </label>
+                    <select class="input-auth js-example-basic-single" id="birthday-place" name="birthday-place" value="" required="">
+                      <option></option>
                       <option>Москва</option>
                       <option>Саратов</option>
                     </select>
@@ -173,17 +281,40 @@
 
               <fieldset>
                 <div class="row">
-                  <div class="field col-lg-4">
+                  <div class="field col-lg-6">
                     <label for="work">
                       Место работы <span>*</span>
                     </label><input class="input-auth" type="text" id="work" placeholder="Место работы" name="work" value="" autocomplete="nope" required="">
                   </div>
 
-                  <div class="field col-lg-4">
+                  <div class="field col-lg-6">
                     <label for="vacation">
-                      Должность
-                    </label><input class="input-auth" type="text" id="vacation" placeholder="Должность" name="vacation" value="" autocomplete="nope">
+                      Должность <span>*</span>
+                    </label><input class="input-auth" type="text" id="vacation" placeholder="Должность" name="vacation" value="" autocomplete="nope" required="">
                   </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="fieldset-last">
+                <div class="row">
+
+                  <div class="field col-lg-4">
+                    <label for="object">
+                      Объект/Задача
+                    </label><input class="input-auth" type="text" id="object" placeholder="Объект/Задача" name="object" value="" autocomplete="nope">
+                  </div>
+
+                  <div class="field col-lg-4">
+                    <label for="gender ">
+                      Пол <span>*</span>
+                    </label>
+                    <select class="input-auth js-example-basic-single" id="gender " name="gender " value="" required="">
+                      <option></option>
+                      <option>мужской</option>
+                      <option>женский</option>
+                    </select>
+                  </div>
+
                 </div>
               </fieldset>
 
@@ -479,8 +610,6 @@
         </form>
       </div>
 
-
-
     </div>
   </section>
 
@@ -501,6 +630,7 @@
   <script src="./js/slick.min.js"></script>
   <script src="./js/jquery.maskedinput.min.js"></script>
   <script src="./js/magnific-popup.min.js"></script>
+  <script src="./js/select2.full.min.js"></script>
   <script src="./js/main.js"></script>
 
 </body>
